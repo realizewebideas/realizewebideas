@@ -16,6 +16,13 @@ const routes: Routes = [
       data: DeveloperDataResolver,
     },
  },
+  {
+    path: ':developer/',
+    component: LandingPageWrapperComponent,
+    resolve: {
+      data: DeveloperDataResolver,
+    },
+ },
 ];
 
 @NgModule({
