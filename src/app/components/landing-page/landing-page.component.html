@@ -1,0 +1,40 @@
+<div class="main-container">
+    <div class="slogan-container">
+        <div class="slogan">
+            <h1>REALIZING <span class="accented">YOUR</span> IDEAS</h1>
+        </div>
+    </div>
+    <div class="about">
+        <p class="about-text">
+            We are a small and dedicated team of web developers looking to help you realize you ideas and improve your business with our professionally made software solutions.
+        </p>
+        <p class="about-text">
+            With a rich portfolio of well built projects and a number of satisfied clients, we offer personal websites, web stores, blogs and any other type of web based application you may need either for personal and professional use.
+        </p>
+        <p class="about-text">
+            We are always looking for new clients and partners, if you would like to work with us please contact us via the email provided at the bottom of this page.
+        </p>
+        <p class="about-text">
+            We'd also like to show you the members of our dedicated team and the projects we succsessfuly completed.
+        </p>
+    </div>
+    <div class="team">
+        <div class="team__button" (click)="animatedButtonClick()">
+            <p class="team__text"> <span class="anim">[[</span>Click here to see our teams and their projects!<span class="anim">]]</span></p>
+        </div>
+    </div>
+    <div class="us" *ngIf="showTeam">
+        <span class="us__ui">(Click to see our portfolios.)</span>
+        <div class="card" onclick="location.href='Veljko'">
+            <p>Veljko Mijovic Uskovic, Software Engineer</p>
+        </div>
+        <div class="card" onclick="location.href='Uros'">
+            <p>Uros Maksimovic, Web Developer</p>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="contact-text">If you would like us to help you realize your ideas, contact us via email: <br>
+        <a class="our-email" href="mailto:realizewebideas@gmail.com">realizewebideas@gmail.com</a>
+    </div>
+</div>

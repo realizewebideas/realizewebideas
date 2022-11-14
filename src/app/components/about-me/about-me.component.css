@@ -1,0 +1,126 @@
+.main-container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 20px
+}
+
+.row-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-1 div{
+    border: 20px solid #659DBD;
+    animation-name: animate-outer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+img{
+    height: 250px;
+}
+
+.cv{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+h1{
+    color: #659DBD;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-text{
+    padding: 20px;
+    background-color: #659DBD;
+    color: white;
+    justify-content: center;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 25%;
+    padding:15px;
+    box-shadow: 15px 15px 100px 10px #659DBD;
+    border-radius: 15px;
+}
+
+.skills-title{
+    margin-top: 100px;
+}
+
+.skills-list{
+    color: #659DBD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    width: 75%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+li{
+    margin-right: 30px
+}
+
+@keyframes animate-outer {
+    0% {
+        border-radius: 0px;
+    }
+    25%{
+        border-radius: 30px;
+    }
+
+    75%{
+        border-radius: 30px;
+    }
+    
+    100%{
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    ul {
+        width: 100%;
+    }
+}
+
+@media only screen and (orientation: portrait){
+    .main-text{
+        width: 100%;
+        margin: 0;
+        font-size: medium;
+    }
+
+    ul{
+        height: auto;
+        margin: 0;
+        flex-wrap: nowrap;
+        font-size: large;
+    }
+
+    img{
+        height: 100px;
+    }
+}

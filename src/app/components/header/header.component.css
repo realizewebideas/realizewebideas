@@ -1,0 +1,105 @@
+.main-container{
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* padding-right: 10px; */
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.title{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    animation-name: background-default-animation;
+    animation-duration: 5s;
+    padding-right: 10px;
+    color: white;
+    padding-top: 15px;
+    background-color: #659DBD;
+    /* margin-right: 5px; */
+}
+
+h1{
+    align-content: center;
+    padding-left: 10px;
+    font-size: 35px;
+    padding: 5px;
+    font-family: 'handwriting';
+}
+
+a, .dropdown{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    height: 100%;
+    color: black;
+    font-size: large;
+    padding-left: 15px;
+    justify-self: center;
+    transition: 0.2s ease-in;
+    padding-right: 15px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+
+.dropdown-button{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.2s ease-in;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+}
+
+.dropdown-button:hover{
+    border: none;
+}
+
+button:focus {outline:0;}
+
+a:hover, .dropdown:hover{
+    color: white;
+    text-shadow: 2px 2px 2px solid gold;
+    cursor: pointer;
+    background-color: #659DBD;
+}
+
+@keyframes background-default-animation {
+    0%   {background-color: #659DBD; color: white;}
+    25%  {background-color: white; color: #659DBD;}
+    50%  {background-color: #659DBD; color:black;}
+    100% {background-color: #659DBD; color: white;}
+}
+
+.dropdown-item {
+    text-align: left;
+}
+
+@media only screen and (orientation: portrait){
+    .title{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

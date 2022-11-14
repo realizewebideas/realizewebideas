@@ -1,0 +1,9 @@
+<app-header #header [myName]="developerData?.name"></app-header>
+<app-about-me #about
+    [profileImage]="developerData?.image"
+    [aboutText]="developerData?.aboutText"
+    [mySkills]="developerData?.mySkills">
+</app-about-me>
+<app-projects #projects [projectsList]="developerData?.myProjects"></app-projects>
+<app-contact #contact [contact]="developerData?.contact"></app-contact>
+

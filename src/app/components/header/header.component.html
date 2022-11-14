@@ -1,0 +1,18 @@
+<div class="main-container">
+    <div class="title">
+        <h1>{{ myName }}</h1>
+    </div>
+    <div class="menu">
+        <a (click)="scrollTo('about')">About Me</a>
+        <a (click)="scrollTo('skills')">What I Can Offer</a>
+        <a (click)="scrollTo('projects')">My Projects</a>
+        <a (click)="scrollTo('contact')">Contact</a>
+        <div ngbDropdown #dropMenu="ngbDropdown" class="dropdown" (mouseenter)="dropMenu.open()" (mouseleave)="dropMenu.toggle()">
+            <button class="dropdown-button" type="button" id="dropdown1" ngbDropdownToggle>Our team</button>
+            <div ngbDropdownMenu >
+                <a class="dropdown-item" href="/Veljko" ngbDropdownItem>Veljko Mijovic Uskovic</a>
+                <a class="dropdown-item" href="/Uros" ngbDropdownItem>Uros Maksimovic</a>
+            </div>
+        </div>
+    </div>
+</div>

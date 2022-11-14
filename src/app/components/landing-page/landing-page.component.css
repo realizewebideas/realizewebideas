@@ -1,0 +1,233 @@
+:host {
+    display: block;
+    min-height: 95vh;
+}
+
+.main-container {
+    background-color: rgb(68, 82, 94);
+    width: 100%;
+    padding: 0 200px 100px 200px;
+    min-height: 95vh;
+}
+
+.slogan-container {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.slogan h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    font-size: 4em;
+  }
+
+.accented{
+        color: #659DBD;
+    text-shadow: 0px 0px 18px #82aec7;
+    font-size: 1em;
+}
+
+.about {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text {
+    color: white;
+    font-size: 1.7em;
+}
+
+.team{
+   text-align: center;
+}
+
+.team__button{
+    color:#659DBD;
+    animation: animated-button-glow 2s steps(40, end) infinite;
+}
+
+.anim{
+    animation: animated-button-move 2s steps(40, end) infinite;
+}
+
+.team__text {
+    font-size: 2em;
+    margin: 0;
+}
+
+.team__button:hover{
+    animation: none;
+    text-shadow: 2px 2px 8px #659DBD;
+    cursor: pointer;
+}
+
+.us{
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 75%;
+}
+
+.card{
+    width: 100%;
+    padding-left: 15px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    background-color: #659DBD;
+    color:white;
+    margin-top: 1rem;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 30px #659DBD;
+    cursor: pointer;
+}
+
+.us__ui {
+    font-size: 1em;
+    color: white;
+}
+
+.contact {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(68, 82, 94);
+    border-top: 1px solid #659DBD;
+    padding: 20px 30px;
+    font-size: 1.7em;
+}
+
+.our-email {
+    color: #659DBD;
+    text-decoration: none;
+}
+
+.our-email:hover {
+    color: #88bede;
+    text-decoration: underline;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+
+@keyframes animated-button-move {
+    from, to {padding: 0; text-shadow: none;}
+    50% {padding-left: 8px; padding-right: 8px; text-shadow: 0 0 15px #659DBD;}
+}
+
+@keyframes animated-button-glow {
+    from, to {text-shadow: none;}
+    50% {text-shadow: 2px 2px 5px #659DBD;}
+}
+
+  @media only screen and (max-width: 1900px) {
+    .slogan h1 {
+        font-size: 4em;
+    }
+
+    .about-text {
+        font-size: 1.8em;
+    }
+
+    .team__text{
+        font-size: 1.5em;
+    }
+
+    .card {
+        font-size: 1.5em;
+    }
+
+    .contact-text {
+        font-size: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 1439px) {
+    .main-container {
+        padding: 0 100px 50px 100px;
+    }
+
+    .about-text {
+        font-size: 1em;
+    }
+
+    .us__ui {
+        font-size: 1em;
+    }
+
+    .card {
+        font-size: 1em;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .slogan h1 {
+        font-size: 2em;
+    }
+
+    .main-container {
+        padding: 0 30px 50px 30px;
+    }
+
+    .team__text{
+        font-size: 0.7em;
+    }
+
+    .us {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .main-container {
+        padding: 0 10px 30px 10px;
+    }
+
+    .slogan h1 {
+        font-size: 1.2em;
+    }
+
+    .team__text{
+        font-size: 0.5em;
+    }
+  }
+
+  @media only screen and (orientation: portrait){
+    .us{
+        margin: 0;
+    }
+
+    .about{
+        font-size: 0.9em;
+    }
+
+    .team__text{
+        font-size: 0.8em;
+    }
+
+    .contact{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,41 @@
+<div class="main-container" id="about">
+    <div class="row-1">
+        <div>
+            <img src="{{ profileImage }}" class="image">
+        </div>
+    </div>
+    <div class="cv">
+        <div class="title">
+           <h1>
+            About Me
+           </h1> 
+        </div>
+           <div class="main-text">
+            <p *ngFor="let p of aboutText">
+                {{ p }}
+            </p>
+           <!-- <p>
+            I'm a software developer experience in freelance work and a good history
+            of timely finished projects. With proven competency in developing web apps and mobile apps for a viriety of clients and purposes, I strive to bring concrete results to my clients and employers. 
+           </p>
+           <p>
+            I belive that good client-developer communication and mutual understand of our goals is of upmost importance in creating valuable and working solutions to my clients.
+           </p>
+           <p>
+            Below you can view a list of my technical skills and technologies I've worked with, as well as some interesting projects in my resume.
+           </p> -->
+        </div>
+    </div>
+    <div class="title skills-title" id="skills">
+        <h1 #skills>
+         My Skills
+        </h1> 
+     </div>
+</div>
+    <div class="skills-list">
+            <ul>
+                <li *ngFor="let skill of mySkills">
+                    {{ skill }}
+                </li>
+            </ul>
+    </div>
